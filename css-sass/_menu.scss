@@ -30,37 +30,56 @@
 
         &__content{
             display: flex;
-            margin: 5em auto;
+            margin: 3em auto;
             justify-content: center;
             flex-wrap: wrap;
+        }
+
+        &__menu__menu-content{
+            margin: auto;
+            justify-content: center;
         }
 
         &__menu__content{
             display: flex;
             margin: auto;
+            flex-wrap: wrap;
             justify-content: center;
         }
 
         &__menu__local{
-            margin: auto;
+            margin: 1em auto;
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             justify-content: center;
         }
 
+        &__menu__img-content{
+            padding: 2em;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+
+        &__menu__img{
+            margin: auto;
+            display: flex;
+        }
+
         &__menu__title{
-            color: #e23c3c;
-            border: 3px solid map-get(u.$colors, "color3");
+            color: map-get(u.$colors, "color3");
+            border: 4px solid map-get(u.$colors, "color3");
             margin: auto;
             justify-content: center;
             display: flex;
+            padding: 1em;
             text-align: center;
             font-weight: 600;
         }
 
         &__menu__link{
             text-decoration: none;
-            margin: 3em auto 0;
+            margin: 2em auto 0;
             display: flex;
         }
 
@@ -70,6 +89,7 @@
             outline: 3px solid map-get(u.$colors, "color3");
             outline-offset: 3px;
             font-size: 1.5em;
+            margin: auto;
             padding: 0.5em 2em;
         }
 
@@ -79,7 +99,7 @@
         }
 
         &__take__content{
-            margin: 5em auto 0;
+            margin: 3em auto 0;
         }
 
         &__take__img{
