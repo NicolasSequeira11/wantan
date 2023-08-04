@@ -11,7 +11,6 @@
     background-image: url(../media/background-1.png);
     background-position: center;
     background-size: cover;
-    height: 100vh;
     margin: auto;
     font-family: u.$font-first;
 
@@ -19,7 +18,7 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            height: fit-content;
+            height: 100vh;
             justify-content: center;
             margin: auto;
         }
