@@ -1,9 +1,9 @@
 @use "utilities" as u;
-@forward "menu";
 
 *{
     box-sizing: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 
@@ -122,8 +122,162 @@
 
 }
 
+// MENU
+
+.menu{
+    background-image: url(../media/background-red.png);
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    margin: auto;
+    border-bottom: 5px solid map-get(u.$colors, "color4");
+
+        &__content{
+        }
+
+        &__content__title{
+            margin: 3em auto 0;
+            display: flex;
+            justify-content: center;
+        }
+}
+
+// INFO MENU
+
+.info-menu{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: u.$font-first;
+    background-color: map-get(u.$colors, "color5");
+
+        &__content{
+            display: flex;
+            margin: 3em auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &__menu__menu-content{
+            margin: auto;
+            justify-content: center;
+        }
+
+        &__menu__content{
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__menu__local{
+            margin: 1em auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__menu__img-content{
+            padding: 2em;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+
+        &__menu__img{
+            margin: auto;
+            display: flex;
+        }
+
+        &__menu__title{
+            color: map-get(u.$colors, "color3");
+            border: 3.5px solid map-get(u.$colors, "color3");
+            margin: auto;
+            justify-content: center;
+            display: flex;
+            padding: 1em;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        &__menu__link{
+            text-decoration: none;
+            margin: 2em auto 0;
+            display: flex;
+        }
+
+        &__menu__link p{
+            color: #f4f0e7;
+            background-color: map-get(u.$colors, "color3");
+            outline: 3px solid map-get(u.$colors, "color3");
+            outline-offset: 3px;
+            font-size: 1.5em;
+            margin: auto;
+            padding: 0.5em 2em;
+        }
+
+        &__menu__link p:hover{
+            color: map-get(u.$colors, "color4");
+            outline: 3px solid map-get(u.$colors, "color4");
+        }
+
+        &__take__content{
+            margin: 3em auto 0;
+        }
+
+        &__take__img{
+            
+        }
+
+        // HORARIOS
+
+        &__horario__title{
+            color: map-get(u.$colors, "color3");
+            margin: 1em auto 0;
+            text-align: center;
+            border: 3.5px solid map-get(u.$colors, "color3");
+            font-size: 1.7em;
+        }
+
+        &__horario__hora{
+            color: map-get(u.$colors, "color3");
+            margin: 0.3em auto 1em;
+            text-align: center;
+            font-size: 1.5em;
+        }
+}
+
+// GALERIA
+
+.galeria{
+    margin: auto;
+    display: flex;
+    padding: 7em 0;
+    justify-content: center;
+    background-color: map-get(u.$colors, "color5");
+    
+        &__content{
+            margin: auto;
+            justify-content: center;
+        }
+
+        &__img-vertical{
+            height: 650px;
+            object-fit: cover;
+        }
+
+        &__img-horizontal{
+            height: 300px;
+            object-fit: cover;
+        }
+}
+
+// FOOTER
+
 .footer{
-    background-color: map-get(u.$colors, "color4");
+    background-color: map-get(u.$colors, "color5");
+    border-top: 5px solid map-get(u.$colors, "color4");
     color: map-get(u.$colors, "color3");
     display: flex;
     margin: auto;

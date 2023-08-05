@@ -1,91 +1,7 @@
-.menu {
-  background-image: url(../media/hosla.png);
-  background-size: contain;
-  background-position: center;
-  display: flex;
-  margin: auto;
-  border-bottom: 5px solid #f6c884;
-}
-.menu__content__title {
-  margin: 3em auto 0;
-  display: flex;
-  justify-content: center;
-}
-
-.info-menu {
-  margin: auto;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  font-family: "Suwannaphum", sans-serif;
-  background-color: #f4f0e7;
-}
-.info-menu__content {
-  display: flex;
-  margin: 3em auto;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.info-menu__menu__menu-content {
-  margin: auto;
-  justify-content: center;
-}
-.info-menu__menu__content {
-  display: flex;
-  margin: auto;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.info-menu__menu__local {
-  margin: 1em auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.info-menu__menu__img-content {
-  padding: 2em;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
-.info-menu__menu__img {
-  margin: auto;
-  display: flex;
-}
-.info-menu__menu__title {
-  color: #e23c3c;
-  border: 3.5px solid #e23c3c;
-  margin: auto;
-  justify-content: center;
-  display: flex;
-  padding: 1em;
-  text-align: center;
-  font-weight: 600;
-}
-.info-menu__menu__link {
-  text-decoration: none;
-  margin: 2em auto 0;
-  display: flex;
-}
-.info-menu__menu__link p {
-  color: #f4f0e7;
-  background-color: #e23c3c;
-  outline: 3px solid #e23c3c;
-  outline-offset: 3px;
-  font-size: 1.5em;
-  margin: auto;
-  padding: 0.5em 2em;
-}
-.info-menu__menu__link p:hover {
-  color: #f6c884;
-  outline: 3px solid #f6c884;
-}
-.info-menu__take__content {
-  margin: 3em auto 0;
-}
 * {
   box-sizing: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .home {
@@ -186,8 +102,130 @@
   padding: 0.7em;
 }
 
+.menu {
+  background-image: url(../media/background-red.png);
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  margin: auto;
+  border-bottom: 5px solid #f6c884;
+}
+.menu__content__title {
+  margin: 3em auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.info-menu {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: "Suwannaphum", sans-serif;
+  background-color: #f4f0e7;
+}
+.info-menu__content {
+  display: flex;
+  margin: 3em auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.info-menu__menu__menu-content {
+  margin: auto;
+  justify-content: center;
+}
+.info-menu__menu__content {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info-menu__menu__local {
+  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info-menu__menu__img-content {
+  padding: 2em;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.info-menu__menu__img {
+  margin: auto;
+  display: flex;
+}
+.info-menu__menu__title {
+  color: #e23c3c;
+  border: 3.5px solid #e23c3c;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  padding: 1em;
+  text-align: center;
+  font-weight: 600;
+}
+.info-menu__menu__link {
+  text-decoration: none;
+  margin: 2em auto 0;
+  display: flex;
+}
+.info-menu__menu__link p {
+  color: #f4f0e7;
+  background-color: #e23c3c;
+  outline: 3px solid #e23c3c;
+  outline-offset: 3px;
+  font-size: 1.5em;
+  margin: auto;
+  padding: 0.5em 2em;
+}
+.info-menu__menu__link p:hover {
+  color: #f6c884;
+  outline: 3px solid #f6c884;
+}
+.info-menu__take__content {
+  margin: 3em auto 0;
+}
+.info-menu__horario__title {
+  color: #e23c3c;
+  margin: 1em auto 0;
+  text-align: center;
+  border: 3.5px solid #e23c3c;
+  font-size: 1.7em;
+}
+.info-menu__horario__hora {
+  color: #e23c3c;
+  margin: 0.3em auto 1em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.galeria {
+  margin: auto;
+  display: flex;
+  padding: 7em 0;
+  justify-content: center;
+  background-color: #f4f0e7;
+}
+.galeria__content {
+  margin: auto;
+  justify-content: center;
+}
+.galeria__img-vertical {
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.galeria__img-horizontal {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer {
-  background-color: #f6c884;
+  background-color: #f4f0e7;
+  border-top: 5px solid #f6c884;
   color: #e23c3c;
   display: flex;
   margin: auto;
