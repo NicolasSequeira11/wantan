@@ -46,6 +46,7 @@
             margin: 2em auto 1em;
             justify-content: center;
             display: flex;
+            font-family: u.$font-first;
         }
 
         &__content-links__link{
@@ -126,7 +127,7 @@
     color: map-get(u.$colors, "color3");
     display: flex;
     margin: auto;
-    padding: 1em 0;
+    padding: 0.5em 0;
     font-family: u.$font-first;
     justify-content: center;
 
