@@ -38,6 +38,7 @@
   justify-content: center;
   display: flex;
   font-family: "Suwannaphum", sans-serif;
+  transition: all 0.5s;
 }
 .home__content-links__link {
   display: flex;
@@ -113,16 +114,28 @@
   padding: 0.7em;
 }
 
+.abajo {
+  position: sticky;
+  top: -15px;
+  padding: 0 0 1em 0;
+}
+
+.abajo-links {
+  display: none;
+  margin: 0.5em auto;
+  transition: all 0.5s;
+}
+
 .menu {
   background-image: url(../media/background-red.png);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   display: flex;
   margin: auto;
   border-bottom: 5px solid #f6c884;
 }
 .menu__content__title {
-  margin: 3em auto 0;
+  margin: 2em auto 0;
   display: flex;
   justify-content: center;
 }

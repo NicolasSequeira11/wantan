@@ -44,6 +44,7 @@
             justify-content: center;
             display: flex;
             font-family: u.$font-first;
+            transition: all 0.5s;
         }
 
         &__content-links__link{
@@ -134,11 +135,25 @@
 
 }
 
+.abajo{
+    position: sticky;
+    top: -15px;
+    padding: 0 0 1em 0;
+}
+
+.abajo-links{
+    display: none;
+    margin: 0.5em auto;
+    transition: all 0.5s;
+}
+
+
+
 // MENU
 
 .menu{
     background-image: url(../media/background-red.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     display: flex;
     margin: auto;
@@ -148,7 +163,7 @@
         }
 
         &__content__title{
-            margin: 3em auto 0;
+            margin: 2em auto 0;
             display: flex;
             justify-content: center;
         }
