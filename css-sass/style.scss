@@ -6,7 +6,6 @@
     scroll-behavior: smooth;
 }
 
-
 .home{
     display: flex;
     background-image: url(../media/background-1.png);
@@ -29,7 +28,6 @@
             width: 100%;
             display: flex;
             object-fit: cover;
-            filter: drop-shadow(0px 3px 5px #474747);
         }
 
         &__content__subtitle{
@@ -37,7 +35,6 @@
             color: map-get(u.$colors, "color1");
             font-size: 1.2em;
             text-align: center;
-            filter: drop-shadow(0px 0px 5px #474747);
         }
 
         // LINKS
@@ -114,9 +111,24 @@
             background-color: map-get(u.$colors, "color3");
         }
 
-        &__content-sm__icon{
+        &__content-sm__svg{
+            display: flex;
+            height: 100%;
+            margin: auto;
+            transition: all 0.2s;
+            padding: 0.4em;
+        }
+
+        &__content-sm__img{
             display: flex;
             margin: auto;
+            padding: 0.7em;
+        }
+
+        &__content-sm__svg:hover > &__content-sm__img{
+            display: flex;
+            margin: auto;
+            fill: map-get(u.$colors, "color4");
             padding: 0.7em;
         }
 
@@ -150,6 +162,8 @@
     width: 100%;
     justify-content: center;
     font-family: u.$font-first;
+    background-image: url(../media/background-chinese-1.png);
+    background-size: contain;
     background-color: map-get(u.$colors, "color5");
 
         &__content{
@@ -233,18 +247,70 @@
         // HORARIOS
 
         &__horario__title{
-            color: map-get(u.$colors, "color3");
+            color: map-get(u.$colors, "color5");
+            background-color: map-get(u.$colors, "color3");;
             margin: 1em auto 0;
             text-align: center;
             border: 3.5px solid map-get(u.$colors, "color3");
             font-size: 1.7em;
+            font-weight: 600;
         }
 
         &__horario__hora{
             color: map-get(u.$colors, "color3");
+            border: 4px solid map-get(u.$colors, "color3");
             margin: 0.3em auto 1em;
             text-align: center;
             font-size: 1.5em;
+        }
+}
+
+// GIFT CARD
+
+.gift-card{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: u.$font-first;
+    background-image: url(../media/background-chinese-1.png);
+    background-size: contain;
+    background-color: map-get(u.$colors, "color5");
+
+        &__content{
+            display: flex;
+            margin: 3em auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &__banner__content{
+            margin: auto;
+        }
+
+        &__title{
+            color: map-get(u.$colors, "color5");
+            background-color: map-get(u.$colors, "color3");
+            padding: 1em;
+            justify-content: center;
+            font-size: 1.7em;
+            text-align: center;
+            display: flex;
+            margin: 0 auto 0.5em;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        &__text{
+            color: map-get(u.$colors, "color3");
+            font-size: 1.1em;
+            justify-content: center;
+            margin: 1em 0.3em 0.5em;
+            display: flex;
+            text-align: justify;
+            padding: 1em 1em;
+            align-items: center;
+            font-weight: 600;
         }
 }
 
@@ -253,7 +319,9 @@
 .galeria{
     margin: auto;
     display: flex;
-    padding: 7em 0;
+    padding: 4em 0;
+    background-image: url(../media/background-chinese-1.png);
+    background-size: contain;
     justify-content: center;
     background-color: map-get(u.$colors, "color5");
     
