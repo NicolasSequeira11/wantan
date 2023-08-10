@@ -1,0 +1,83 @@
+.animadoAba {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.animadoIzq {
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.animadoDer {
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.animadoArr {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.mostrarAbajo {
+  animation: mostrarAbajo 1s;
+}
+
+@keyframes mostrarAbajo {
+  0% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.mostrarIzquierda {
+  animation: mostrarIzquierda 1s;
+}
+
+@keyframes mostrarIzquierda {
+  0% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.mostrarDerecha {
+  animation: mostrarDerecha 1s;
+}
+
+@keyframes mostrarDerecha {
+  0% {
+    transform: translateX(60px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.mostrarArriba {
+  animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.mostrarImg {
+  transition: all 0.5s;
+  animation: img 0.5s;
+}
+
+@keyframes img {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=animaciones.css.map */

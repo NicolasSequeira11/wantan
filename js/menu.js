@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
  
-    let boton = document.querySelector(".nav-content-icon");
-    let links = document.querySelector(".links-mobile");
+    let boton = document.querySelector("#ham");
+    let links = document.querySelector(".home__content-links");
 
     boton.addEventListener("click", ()=> {
-        links.classList.toggle("links-mobile");
+        links.classList.toggle("d-none");
     });
 
 });

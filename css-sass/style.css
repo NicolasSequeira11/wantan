@@ -44,7 +44,6 @@
   display: flex;
   margin: auto;
   width: 100%;
-  padding: 0.3em;
   text-decoration: none;
 }
 .home__content-links__link-text {
@@ -129,15 +128,34 @@
 .menu {
   background-image: url(../media/background-red.png);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   display: flex;
+  z-index: 1000;
   margin: auto;
   border-bottom: 5px solid #f6c884;
+}
+.menu__content {
+  justify-content: center;
+  text-align: center;
 }
 .menu__content__title {
   margin: 2em auto 0;
   display: flex;
   justify-content: center;
+}
+.menu__link-logo-mobile {
+  text-decoration: none;
+}
+.menu__img-mobile {
+  padding: 10px;
+  width: 100%;
+}
+.menu__ham {
+  color: #ffffff;
+  text-align: end;
+  margin: auto;
+  padding-right: 20px;
 }
 
 .info-menu {
@@ -152,7 +170,7 @@
 }
 .info-menu__content {
   display: flex;
-  margin: 3em auto;
+  margin: 1em auto;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -271,6 +289,26 @@
   padding: 1em 1em;
   align-items: center;
   font-weight: 600;
+  flex-direction: column;
+}
+.gift-card__button-reserva {
+  display: flex;
+  text-decoration: none;
+  background-color: #26d366;
+  padding: 1em;
+  color: #ffffff;
+  border-radius: 50px;
+  margin: 20px 0;
+  font-size: 1.3em;
+  transition: all 0.2s;
+}
+.gift-card__button-reserva:hover {
+  background-color: #e23c3c;
+}
+.gift-card__button-icon {
+  display: flex;
+  margin: auto;
+  padding: 0 1px 0 10px;
 }
 
 .galeria {

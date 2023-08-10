@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Suwannaphum:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <!-- Estilo CSS -->
     <link rel="stylesheet" href="../css-sass/style.css">
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="../css-sass/animaciones.css">
     <!-- Estilo Bootstrap -->
     <link rel="stylesheet" href="../css-sass/style-bootstrap.css">
     <!-- Favicon -->
@@ -22,13 +24,19 @@
     <div class="menu raw col-12">
         <div class="menu__content col-12">
 
-            <a href="../index.html"><img src="../media/wantan-logo-horizontal.png" class="menu__content__title col-10 col-lg-3" alt=""></a>
+            <a href="../index.html">
+                <img src="../media/wantan-logo-horizontal.png" class="menu__content__title d-none d-md-flex col-10 col-lg-3" alt="">
+                <a href="../index.html" class="menu__link-logo-mobile">
+                    <img src="../media/wantan-logo.png" class="d-md-none col-2 menu__img-mobile" alt="">
+                </a>
+                <i class="fa-solid fa-bars fa-2xl d-md-none col-9 menu__ham" id="ham"></i>
+            </a>
 
             <div class="home__content-links flex-column flex-md-row col-12 col-sm-10 col-md-4 col-lg-6 col-xl-5">
                 <a href="menu.html" class="home__content-links__link col-7 col-lg-3">
                     <p class="home__content-links__link-text">Menú</p>
                 </a>
-                <a href="" class="home__content-links__link col-7 col-lg-3">
+                <a href="reservas.html" class="home__content-links__link col-7 col-lg-3">
                     <p class="home__content-links__link-text">Reservas</p>
                 </a>
                 <a href="horarios.html" class="home__content-links__link col-7 col-lg-3">
@@ -224,6 +232,13 @@
 
     <!-- Scroll Nav -->
     <script src="../js/scroll-nav.js"></script>
+    <!-- Animación Scroll -->
+    <script src="../js/animacionAba.js"></script>
+    <script src="../js/animacionArr.js"></script>
+    <script src="../js/animacionIzq.js"></script>
+    <script src="../js/animacionDer.js"></script>
+    <!-- Nav Mobile -->
+    <script src="../js/menu.js"></script>
     <!-- Font Awesome Icon -->
     <script src="https://kit.fontawesome.com/c9684ebd50.js" crossorigin="anonymous"></script>
 </body>

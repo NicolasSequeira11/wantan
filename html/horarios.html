@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Suwannaphum:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <!-- Estilo CSS -->
     <link rel="stylesheet" href="../css-sass/style.css">
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="../css-sass/animaciones.css">
     <!-- Estilo Bootstrap -->
     <link rel="stylesheet" href="../css-sass/style-bootstrap.css">
     <!-- Favicon -->
@@ -22,13 +24,19 @@
     <div class="menu raw col-12">
         <div class="menu__content col-12">
 
-            <a href="../index.html"><img src="../media/wantan-logo-horizontal.png" class="menu__content__title col-10 col-lg-3" alt=""></a>
+            <a href="../index.html">
+                <img src="../media/wantan-logo-horizontal.png" class="menu__content__title d-none d-md-flex col-10 col-lg-3" alt="">
+                <a href="../index.html" class="menu__link-logo-mobile">
+                    <img src="../media/wantan-logo.png" class="d-md-none col-2 menu__img-mobile" alt="">
+                </a>
+                <i class="fa-solid fa-bars fa-2xl d-md-none col-9 menu__ham" id="ham"></i>
+            </a>
 
             <div class="home__content-links flex-column flex-md-row col-12 col-sm-10 col-md-4 col-lg-6 col-xl-5">
                 <a href="menu.html" class="home__content-links__link col-7 col-lg-3">
                     <p class="home__content-links__link-text">Menú</p>
                 </a>
-                <a href="" class="home__content-links__link col-7 col-lg-3">
+                <a href="reservas.html" class="home__content-links__link col-7 col-lg-3">
                     <p class="home__content-links__link-text">Reservas</p>
                 </a>
                 <a href="horarios.html" class="home__content-links__link col-7 col-lg-3">
@@ -49,35 +57,35 @@
     <!-- INFO MENU -->
 
     <div class="info-menu raw col-12">
-        <div class="info-menu__content col-10">
+        <div class="info-menu__content col-12 col-sm-10 col-md-10">
 
             <div class="info-menu__menu__content col-12 col-md-10">
                 
                 <div class="info-menu__menu__local col-12">
-                    <div class="info-menu__menu__menu-content col-12 col-md-6">
-                        <p class="info-menu__horario__title col-11 col-sm-10 col-lg-10 col-xl-8">Martes</p>
-                        <p class="info-menu__horario__hora col-11 col-sm-10 col-lg-10 col-xl-8">20 a 00</p>
-                        <p class="info-menu__horario__title col-11 col-sm-10 col-lg-10 col-xl-8">Miércoles a Viernes</p>
-                        <p class="info-menu__horario__hora col-11 col-sm-10 col-lg-10 col-xl-8">12 a 15 - 20 a 00</p>
-                        <p class="info-menu__horario__title col-11 col-sm-10 col-lg-10 col-xl-8">Sábado y Domingo</p>
-                        <p class="info-menu__horario__hora col-11 col-sm-10 col-lg-10 col-xl-8">13 a 16 - 20 a 00</p>
+                    <div class="info-menu__menu__menu-content col-12 col-lg-6">
+                        <p class="info-menu__horario__title col-10 col-sm-10 col-lg-10 col-xl-8">Martes</p>
+                        <p class="info-menu__horario__hora col-10 col-sm-10 col-lg-10 col-xl-8">20 a 00</p>
+                        <p class="info-menu__horario__title col-10 col-sm-10 col-lg-10 col-xl-8">Miércoles a Viernes</p>
+                        <p class="info-menu__horario__hora col-10 col-sm-10 col-lg-10 col-xl-8">12 a 15 - 20 a 00</p>
+                        <p class="info-menu__horario__title col-10 col-sm-10 col-lg-10 col-xl-8">Sábado y Domingo</p>
+                        <p class="info-menu__horario__hora col-10 col-sm-10 col-lg-10 col-xl-8">13 a 16 - 20 a 00</p>
                     </div>
-                    <div class="info-menu__menu__img-content col-12 col-md-6">
+                    <div class="info-menu__menu__img-content col-12 col-lg-6 mostrarImg">
                         <img src="../media/montevideo.png" class="info-menu__menu__img col-12" alt="">
                     </div>
                 </div>
 
                 <div class="info-menu__menu__local col-12">
-                    <div class="info-menu__menu__menu-content col-12 col-md-6">
-                        <div class="info-menu__menu__img-content">
+                    <div class="info-menu__menu__menu-content col-12 col-lg-6">
+                        <div class="info-menu__menu__img-content mostrarImg">
                             <img src="../media/pde.png" class="info-menu__menu__img col-12" alt="">
                         </div>
                     </div>
-                    <div class="info-menu__menu__menu-content col-12 col-md-6">
-                        <p class="info-menu__horario__title col-11 col-sm-10 col-lg-10 col-xl-8">Martes</p>
-                        <p class="info-menu__horario__hora col-11 col-sm-10 col-lg-10 col-xl-8">20 a 00</p>
-                        <p class="info-menu__horario__title col-11 col-sm-10 col-lg-10 col-xl-8">Miércoles a Domingo</p>
-                        <p class="info-menu__horario__hora col-11 col-sm-10 col-lg-10 col-xl-8">12 a 15 - 20 a 00</p>
+                    <div class="info-menu__menu__menu-content col-12 col-lg-6">
+                        <p class="info-menu__horario__title col-10 col-sm-10 col-lg-10 col-xl-8">Martes</p>
+                        <p class="info-menu__horario__hora col-10 col-sm-10 col-lg-10 col-xl-8">20 a 00</p>
+                        <p class="info-menu__horario__title col-10 col-sm-10 col-lg-10 col-xl-8">Miércoles a Domingo</p>
+                        <p class="info-menu__horario__hora col-10 col-sm-10 col-lg-10 col-xl-8">12 a 15 - 20 a 00</p>
                     </div>
                 </div>
 
@@ -85,7 +93,7 @@
 
     <!-- PEDIDOS YA -->
 
-            <div class="info-menu__take col-12 col-md-10">
+            <div class="info-menu__take col-12 col-md-10 animadoAba">
                 <div class="info-menu__take__content col-12">
                     <img src="../media/pedidosya.png" class="info-menu__take__img col-12" alt="">
                 </div>
@@ -142,6 +150,13 @@
 
     <!-- Scroll Nav -->
     <script src="../js/scroll-nav.js"></script>
+    <!-- Animación Scroll -->
+    <script src="../js/animacionAba.js"></script>
+    <script src="../js/animacionArr.js"></script>
+    <script src="../js/animacionIzq.js"></script>
+    <script src="../js/animacionDer.js"></script>
+    <!-- Nav Mobile -->
+    <script src="../js/menu.js"></script>
     <!-- Font Awesome Icon -->
     <script src="https://kit.fontawesome.com/c9684ebd50.js" crossorigin="anonymous"></script>
 </body>
