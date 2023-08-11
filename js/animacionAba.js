@@ -4,7 +4,7 @@ function mostrarScrollAba(){
     let scrollTop = document.documentElement.scrollTop;
     for (var i=0; i < animadoAba.length; i++) {
         let alturaAnimado = animadoAba[i].offsetTop;
-        if(alturaAnimado - 500 < scrollTop){
+        if(alturaAnimado - 550 < scrollTop){
             animadoAba[i].style.opacity = 1;
             animadoAba[i].classList.add("mostrarAbajo");
         }

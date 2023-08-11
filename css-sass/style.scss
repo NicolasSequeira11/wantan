@@ -1,4 +1,5 @@
 @use "utilities" as u;
+@import "animaciones.scss";
 
 *{
     box-sizing: 0;
@@ -119,6 +120,18 @@
             padding: 0.4em;
         }
 
+        &__content-sm__icon-img{
+            display: flex;
+            height: 100%;
+            margin: auto;
+            margin-left: 1px;
+            transition: all 0.2s;
+            padding: 0.7em;
+        }
+
+        &__content-sm__icon-img:hover{
+        }
+
         &__content-sm__img{
             display: flex;
             margin: auto;
@@ -202,7 +215,7 @@
 
         &__content{
             display: flex;
-            margin: 1em auto;
+            margin: 1em auto 3em;
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -240,7 +253,7 @@
 
         &__menu__title{
             color: map-get(u.$colors, "color3");
-            border: 3.5px solid map-get(u.$colors, "color3");
+            border: 5px solid map-get(u.$colors, "color3");
             margin: auto;
             justify-content: center;
             display: flex;
@@ -258,24 +271,56 @@
         &__menu__link p{
             color: #f4f0e7;
             background-color: map-get(u.$colors, "color3");
-            outline: 3px solid map-get(u.$colors, "color3");
-            outline-offset: 3px;
             font-size: 1.5em;
             margin: auto;
             padding: 0.5em 2em;
+            transition: all 0.4s;
         }
 
         &__menu__link p:hover{
-            color: map-get(u.$colors, "color4");
-            outline: 3px solid map-get(u.$colors, "color4");
+            background-color: map-get(u.$colors, "color6");
+            animation: boton 0.5s;
         }
 
+        // TAKE AWAY
+
         &__take__content{
-            margin: 3em auto 0;
+            margin: 1.5em auto 0;
+            overflow: hidden;
+        }
+
+        &__take__content:hover > &__take__img{
+            transform: scale(1.1);
         }
 
         &__take__img{
-            
+
+            transition: all 0.5s;
+        }
+
+        &__take__container-button{
+            margin: 2em auto 0;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__take__button{
+            margin: 0.5em auto;
+            padding: 1em;
+            text-decoration: none;
+            color: map-get(u.$colors, "color1");
+            outline-offset: 3px;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.3em;
+            background-color: map-get(u.$colors, "color3");
+            transition: all 0.1s;
+        }
+
+        &__take__button:hover{
+            background-color: map-get(u.$colors, "color6");
+            animation: boton 0.5s;
         }
 
         // HORARIOS
@@ -351,7 +396,7 @@
         // RESERVA
 
         &__container-reserva{
-            
+            font-size: 1.3em;
         }
 
         &__button-reserva{
@@ -363,11 +408,13 @@
             border-radius: 50px;
             margin: 20px 0;
             font-size: 1.3em;
-            transition: all 0.2s;
+            transition: all 0.5s;
         }
 
         &__button-reserva:hover{
             background-color: map-get(u.$colors, "color3");
+            transition: all 0.3s;
+            animation: boton 0.5s;
         }
 
         &__button-icon{
@@ -408,12 +455,12 @@
 // FOOTER
 
 .footer{
-    background-color: map-get(u.$colors, "color5");
+    background-color: map-get(u.$colors, "color6");
     border-top: 5px solid map-get(u.$colors, "color4");
-    color: map-get(u.$colors, "color3");
+    color: map-get(u.$colors, "color5");
     display: flex;
     margin: auto;
-    padding: 0.5em 0;
+    padding: 1em 0;
     font-family: u.$font-first;
     justify-content: center;
 
@@ -433,7 +480,6 @@
         }
 
         &__logo{
-            transform: scale(0.8);
             height: fit-content;
         }
 }

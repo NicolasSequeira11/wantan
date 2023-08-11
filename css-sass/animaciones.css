@@ -80,4 +80,18 @@
     transform: scale(1);
     opacity: 1;
   }
+}
+@keyframes boton {
+  0% {
+    outline: 0px solid #f6c884;
+    outline-offset: 0px;
+  }
+  50% {
+    outline: 10px solid #f6c884;
+    outline-offset: 2px;
+  }
+  100% {
+    outline: 2px solid rgba(226, 60, 60, 0.1);
+    outline-offset: 12px;
+  }
 }/*# sourceMappingURL=animaciones.css.map */
