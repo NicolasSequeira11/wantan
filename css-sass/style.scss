@@ -109,7 +109,7 @@
         &__content-sm__link:hover{
             opacity: 1;
             color: map-get(u.$colors, "color4");
-            background-color: map-get(u.$colors, "color3");
+            background-color: map-get(u.$colors, "color4");
         }
 
         &__content-sm__svg{
@@ -141,17 +141,36 @@
         &__content-sm__svg:hover > &__content-sm__img{
             display: flex;
             margin: auto;
-            fill: map-get(u.$colors, "color4");
             padding: 0.7em;
         }
 
 }
 
-.abajo{
+.linterna{
+    display: flex;
     position: sticky;
-    top: -15px;
-    padding: 0 0 1em 0;
+    top: 0;
+    justify-content: space-between;
+
+        &__img{
+            height: 35vh;
+            position: absolute;
+            object-fit: contain;
+        }
+
+        &__img-2{
+            height: 35vh;
+            position: absolute;
+            left: 83vw;
+            object-fit: contain;
+        }
 }
+
+// .abajo{
+//     position: sticky;
+//     top: -15px;
+//     padding: 0 0 1em 0;
+// }
 
 .abajo-links{
     display: none;
@@ -164,7 +183,7 @@
 // MENU
 
 .menu{
-    background-image: url(../media/background-red.png);
+    background-image: url(../media/background-redd.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -279,6 +298,9 @@
 
         &__menu__link p:hover{
             background-color: map-get(u.$colors, "color6");
+        }
+
+        &__menu__link p:active{
             animation: boton 0.5s;
         }
 
@@ -320,6 +342,9 @@
 
         &__take__button:hover{
             background-color: map-get(u.$colors, "color6");
+        }
+
+        &__take__button:active{
             animation: boton 0.5s;
         }
 

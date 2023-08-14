@@ -189,7 +189,7 @@
 .home__content-sm__link:hover {
   opacity: 1;
   color: #f6c884;
-  background-color: #e23c3c;
+  background-color: #f6c884;
 }
 .home__content-sm__svg {
   display: flex;
@@ -214,14 +214,27 @@
 .home__content-sm__svg:hover > .home__content-sm__img {
   display: flex;
   margin: auto;
-  fill: #f6c884;
   padding: 0.7em;
 }
 
-.abajo {
+.linterna {
+  display: flex;
   position: sticky;
-  top: -15px;
-  padding: 0 0 1em 0;
+  top: 0;
+  justify-content: space-between;
+}
+.linterna__img {
+  height: 35vh;
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.linterna__img-2 {
+  height: 35vh;
+  position: absolute;
+  left: 83vw;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .abajo-links {
@@ -231,7 +244,7 @@
 }
 
 .menu {
-  background-image: url(../media/background-red.png);
+  background-image: url(../media/background-redd.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -329,7 +342,9 @@
   transition: all 0.4s;
 }
 .info-menu__menu__link p:hover {
-  background-color: #c92626;
+  background-color: #b92222;
+}
+.info-menu__menu__link p:active {
   animation: boton 0.5s;
 }
 .info-menu__take__content {
@@ -361,7 +376,9 @@
   transition: all 0.1s;
 }
 .info-menu__take__button:hover {
-  background-color: #c92626;
+  background-color: #b92222;
+}
+.info-menu__take__button:active {
   animation: boton 0.5s;
 }
 .info-menu__horario__title {
@@ -474,7 +491,7 @@
 }
 
 .footer {
-  background-color: #c92626;
+  background-color: #b92222;
   border-top: 5px solid #f6c884;
   color: #f4f0e7;
   display: flex;
