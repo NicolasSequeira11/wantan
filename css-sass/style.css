@@ -237,12 +237,6 @@
      object-fit: contain;
 }
 
-.abajo-links {
-  display: none;
-  margin: 0.5em auto;
-  transition: all 0.5s;
-}
-
 .menu {
   background-image: url(../media/background-redd.png);
   background-size: cover;
@@ -343,9 +337,7 @@
 }
 .info-menu__menu__link p:hover {
   background-color: #b92222;
-}
-.info-menu__menu__link p:active {
-  animation: boton 0.5s;
+  animation: boton 0.4s;
 }
 .info-menu__take__content {
   margin: 1.5em auto 0;
@@ -377,9 +369,7 @@
 }
 .info-menu__take__button:hover {
   background-color: #b92222;
-}
-.info-menu__take__button:active {
-  animation: boton 0.5s;
+  animation: boton 0.4s;
 }
 .info-menu__horario__title {
   color: #f4f0e7;
@@ -387,7 +377,7 @@
   margin: 1em auto 0;
   text-align: center;
   border: 3.5px solid #e23c3c;
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-weight: 600;
 }
 .info-menu__horario__hora {
@@ -395,7 +385,7 @@
   border: 4px solid #e23c3c;
   margin: 0.3em auto 1em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .gift-card {
@@ -458,7 +448,7 @@
 .gift-card__button-reserva:hover {
   background-color: #e23c3c;
   transition: all 0.3s;
-  animation: boton 0.5s;
+  animation: boton 0.4s;
 }
 .gift-card__button-icon {
   display: flex;
