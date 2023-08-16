@@ -216,6 +216,9 @@
   margin: auto;
   padding: 0.7em;
 }
+.home__img-footer {
+  background-color: green;
+}
 
 .linterna {
   display: flex;
@@ -282,12 +285,14 @@
 }
 .info-menu__content {
   display: flex;
-  margin: 1em auto 3em;
+  margin: 2em auto 3em;
   justify-content: center;
   flex-wrap: wrap;
 }
 .info-menu__menu__menu-content {
   margin: auto;
+  height: -moz-fit-content;
+  height: fit-content;
   justify-content: center;
 }
 .info-menu__menu__content {
@@ -296,24 +301,37 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.info-menu__menu__horario-content {
+  margin: 0 auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+}
 .info-menu__menu__local {
-  margin: 1em auto;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .info-menu__menu__img-content {
-  padding: 2em;
   display: flex;
   margin: auto;
+  padding: 1em;
   justify-content: center;
 }
 .info-menu__menu__img {
   margin: auto;
   display: flex;
 }
+.info-menu__menu__container-icon {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+}
 .info-menu__menu__title {
-  color: #e23c3c;
+  color: #ffffff;
+  background-color: #e23c3c;
   border: 5px solid #e23c3c;
   margin: auto;
   justify-content: center;
@@ -328,16 +346,17 @@
   display: flex;
 }
 .info-menu__menu__link p {
-  color: #f4f0e7;
-  background-color: #e23c3c;
+  color: #e23c3c;
   font-size: 1.5em;
   margin: auto;
+  border: 5px solid #e23c3c;
   padding: 0.5em 2em;
   transition: all 0.4s;
 }
 .info-menu__menu__link p:hover {
   background-color: #b92222;
   animation: boton 0.4s;
+  color: #ffffff;
 }
 .info-menu__take__content {
   margin: 1.5em auto 0;

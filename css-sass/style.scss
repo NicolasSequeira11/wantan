@@ -144,6 +144,12 @@
             padding: 0.7em;
         }
 
+        //FOOTER
+
+        &__img-footer{
+            background-color: green;
+        }
+
 }
 
 .linterna{
@@ -234,13 +240,14 @@
 
         &__content{
             display: flex;
-            margin: 1em auto 3em;
+            margin: 2em auto 3em;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         &__menu__menu-content{
             margin: auto;
+            height: fit-content;
             justify-content: center;
         }
 
@@ -251,17 +258,25 @@
             justify-content: center;
         }
 
+        // HORARIO
+
+        &__menu__horario-content{
+            margin: 0 auto;
+            height: fit-content;
+            justify-content: center;
+        }
+
         &__menu__local{
-            margin: 1em auto;
+            margin: auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
 
         &__menu__img-content{
-            padding: 2em;
             display: flex;
             margin: auto;
+            padding: 1em;
             justify-content: center;
         }
 
@@ -270,8 +285,16 @@
             display: flex;
         }
 
+        &__menu__container-icon{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            padding: 1em 0;
+        }
+
         &__menu__title{
-            color: map-get(u.$colors, "color3");
+            color: map-get(u.$colors, "color1");
+            background-color: map-get(u.$colors, "color3");
             border: 5px solid map-get(u.$colors, "color3");
             margin: auto;
             justify-content: center;
@@ -285,13 +308,14 @@
             text-decoration: none;
             margin: 2em auto 0;
             display: flex;
+
         }
 
         &__menu__link p{
-            color: #f4f0e7;
-            background-color: map-get(u.$colors, "color3");
+            color: map-get(u.$colors, "color3");
             font-size: 1.5em;
             margin: auto;
+            border: 5px solid map-get(u.$colors, "color3");
             padding: 0.5em 2em;
             transition: all 0.4s;
         }
@@ -299,6 +323,7 @@
         &__menu__link p:hover{
             background-color: map-get(u.$colors, "color6");
             animation: boton 0.4s;
+            color: map-get(u.$colors, "color1");
         }
 
         // TAKE AWAY
@@ -501,5 +526,6 @@
         &__logo{
             height: fit-content;
         }
+        
 }
 
