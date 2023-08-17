@@ -342,12 +342,12 @@
 }
 .info-menu__menu__link {
   text-decoration: none;
-  margin: 2em auto 0;
+  margin: 1.6em auto;
   display: flex;
 }
 .info-menu__menu__link p {
   color: #e23c3c;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: auto;
   border: 5px solid #e23c3c;
   padding: 0.5em 2em;
@@ -378,17 +378,18 @@
   margin: 0.5em auto;
   padding: 1em;
   text-decoration: none;
-  color: #ffffff;
+  color: #e23c3c;
+  border: 5px solid #e23c3c;
   outline-offset: 3px;
   justify-content: center;
   text-align: center;
   font-size: 1.3em;
-  background-color: #e23c3c;
   transition: all 0.1s;
 }
 .info-menu__take__button:hover {
   background-color: #b92222;
   animation: boton 0.4s;
+  color: #ffffff;
 }
 .info-menu__horario__title {
   color: #f4f0e7;

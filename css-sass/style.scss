@@ -306,14 +306,14 @@
 
         &__menu__link{
             text-decoration: none;
-            margin: 2em auto 0;
+            margin: 1.6em auto;
             display: flex;
 
         }
 
         &__menu__link p{
             color: map-get(u.$colors, "color3");
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin: auto;
             border: 5px solid map-get(u.$colors, "color3");
             padding: 0.5em 2em;
@@ -352,18 +352,20 @@
             margin: 0.5em auto;
             padding: 1em;
             text-decoration: none;
-            color: map-get(u.$colors, "color1");
+            color: map-get(u.$colors, "color3");
+            border: 5px solid map-get(u.$colors, "color3");
             outline-offset: 3px;
             justify-content: center;
             text-align: center;
             font-size: 1.3em;
-            background-color: map-get(u.$colors, "color3");
             transition: all 0.1s;
         }
 
         &__take__button:hover{
             background-color: map-get(u.$colors, "color6");
             animation: boton 0.4s;
+            
+            color: map-get(u.$colors, "color1");
         }
 
         // HORARIOS
